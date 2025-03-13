@@ -1,9 +1,9 @@
-.homepage-container {
-background-color: white;
- border-radius: 25px;
- width: 75%;
- box-shadow: 0 5px 15px;
-  
+.App {
+  text-align: center;
+  margin: 20px;
 }
 
-body {background-color: black;}
+body {
+  background-color: black;
+  color: white;
+}

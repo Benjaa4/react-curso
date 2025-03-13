@@ -1,0 +1,10 @@
+.product {
+  color: black;
+  background-color: white;
+  width: 50%;
+}
+
+containerP {
+  display: flex;
+  flex-direction: column;
+}
