@@ -1,11 +1,25 @@
 .product {
   color: black;
   background-color: white;
-  width: 50%;
   border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.product:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.product button {
+  background-color: #56ff86;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 containerP {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }

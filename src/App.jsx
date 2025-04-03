@@ -1,19 +1,23 @@
 import "./App.css";
 import Text from "./TextPage";
 import ItemListContainer from "./ItemListContainer.jsx";
+import Navbar from './Navbar.jsx'
+import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Techshop</h1>
-      <p>
-        Techshop is a virtual store where you can find anything related to
-        technology.
-      </p>
-      <ItemListContainer />
+
+    <BrowserRouter>
+      <Navbar />
       <Text />
-    </div>
-  );
+      <Routes>
+
+        <Route exact path='/Productos' element={<ItemListContainer />}></Route>
+      </Routes>
+    </BrowserRouter>
+
+  )
+
 }
 
 export default App;
