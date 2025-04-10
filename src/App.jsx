@@ -1,8 +1,9 @@
 import "./App.css";
 import Text from "./TextPage";
-import ItemListContainer from "./ItemListContainer.jsx";
-import Navbar from './Navbar.jsx'
+import ItemListContainer from "./ItemListContainer";
 import { BrowserRouter, Routes, Route } from "react-router";
+import Navbar from './Navbar.jsx'
+
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
       <Navbar />
       <Text />
       <Routes>
-
-        <Route exact path='/Productos' element={<ItemListContainer />}></Route>
+        <Route path="/" element={<ItemListContainer />} />
       </Routes>
+
     </BrowserRouter>
 
   )

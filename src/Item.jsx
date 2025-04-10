@@ -1,7 +1,10 @@
 import { products } from './productos.js';
 import { useState } from 'react';
+import ItemDetail from './ItemDetail/ItemDetail.jsx'
 function Item() {
-    const [cart, setCart] = useState([]); // Initialize cart state
+    const [cart, setCart] = useState([])
+
+
 
     const agregarCarrito = (productoCart) => {
         const ProductosInProducts = products.find(item => item.id === productoCart.id);
@@ -31,10 +34,10 @@ function Item() {
 
             {products.map(product => (
                 <div key={product.id} className='product'>
-
-                    <h2>{product.name}</h2>
-                    <p>${product.price}</p>
+                    <ItemDetail item={product} />
                     <button onClick={() => agregarCarrito(product)}>Add to Cart</button>
+
+
                 </div>
             ))}
             <h2>Cart:</h2>

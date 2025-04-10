@@ -1,4 +1,4 @@
-import Cart from "./Cart";
+
 import "./Navbar.css";
 
 function Navbar() {
@@ -26,11 +26,6 @@ function Navbar() {
                 <a className="nav-link active" aria-current="page" href="#">
                   Techshop
                 </a>
-              </li>
-              <li className="nav-item">
-
-                <Cart />
-
               </li>
             </ul>
           </div>
