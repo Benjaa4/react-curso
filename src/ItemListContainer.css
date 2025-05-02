@@ -1,8 +1,13 @@
 .product {
+  display: flex;
+  flex-direction: column;
   color: black;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 2rem;
+  padding: 20px;
+  width: 300px;
+  justify-content: space-between;
 }
 
 .product:hover {
@@ -20,6 +25,18 @@
 }
 
 containerP {
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
+}
+
+.containerProducts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .containerProducts {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
 }

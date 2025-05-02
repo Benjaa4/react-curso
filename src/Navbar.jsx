@@ -1,14 +1,19 @@
 
+import { useNavigate } from "react-router";
 import "./Navbar.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/productos");
+  };
+  const handleClick2 = () => {
+    navigate("/");
+  }
   return (
     <header className="nvheader">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+        <div className="container-fluid container">
           <button
             className="navbar-toggler"
             type="button"
@@ -23,9 +28,12 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <button className="navbar-btn" aria-current="page" href="#" onClick={handleClick2}>
                   Techshop
-                </a>
+                </button>
+              </li>
+              <li>
+                <button className="navbar-btn" onClick={handleClick}>Products</button>
               </li>
             </ul>
           </div>

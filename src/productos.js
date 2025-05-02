@@ -41,4 +41,39 @@ export const products = [
     detail:
       "The Samsung Z Flip 5 is a foldable smartphone that combines a compact design with cutting-edge technology, offering a unique user experience.",
   },
+  {
+    id: 7,
+    name: "Iphone 14 Pro",
+    price: 900,
+    detail:
+      "The iPhone 14 Pro is a premium smartphone from Apple, featuring a powerful A16 Bionic chip, advanced camera system, and a stunning display.",
+  },
+  {
+    id: 8,
+    name: "Iphone 15",
+    price: 800,
+    detail:
+      "The iPhone 15 is a flagship smartphone from Apple, offering a sleek design, powerful performance, and advanced camera features.",
+  },
+  {
+    id: 9,
+    name: "Iphone 15 Pro",
+    price: 1100,
+    detail:
+      "The iPhone 15 Pro is a premium smartphone with advanced features, including a powerful A17 Bionic chip and an impressive camera system.",
+  },
+  {
+    id: 10,
+    name: "Samsung S24",
+    price: 700,
+    detail:
+      "The Samsung S24 is a flagship smartphone that offers top-tier performance, a stunning display, and an advanced camera system.",
+  },
+  {
+    id: 11,
+    name: "Xiaomi 13",
+    price: 600,
+    detail:
+      "The Xiaomi 13 is a high-performance smartphone with a sleek design, powerful camera capabilities, and a vibrant display.",
+  },
 ];

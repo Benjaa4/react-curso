@@ -30,12 +30,13 @@ function Item() {
     };
 
     return (
-        <div>
+        <div className='containerProducts'>
 
             {products.map(product => (
                 <div key={product.id} className='product'>
-                    <ItemDetail item={product} />
+                    {<ItemDetail item={product} />}
                     <button onClick={() => agregarCarrito(product)}>Add to Cart</button>
+
 
 
                 </div>

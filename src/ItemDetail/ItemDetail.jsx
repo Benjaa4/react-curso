@@ -7,7 +7,6 @@ function ItemDetail({ item }) {
             <h2>{item.name}</h2>
             <p>{item.detail}</p>
             <p>Price: ${item.price}</p>
-
         </div>
     );
 }
