@@ -45,6 +45,10 @@ function Item() {
             {cart.map(item => (
                 <div key={item.id} className='product'>
                     <h2>{item.name}</h2>  <p>({item.quantity})</p>
+                    <p>{item.detail}</p>
+                    <p>Price: ${item.price}</p>
+                    <p>Total: ${item.price * item.quantity}</p>
+                    <button onClick={() => setCart(cart.filter(i => i.id !== item.id))}>Remove</button>
                 </div>
             ))}
         </div>
