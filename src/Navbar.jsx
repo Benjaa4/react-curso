@@ -10,6 +10,9 @@ function Navbar() {
   const handleClick2 = () => {
     navigate("/");
   }
+  const handleClick3 = () => {
+    navigate("/carrito");
+  }
   return (
     <header className="nvheader">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -35,6 +38,8 @@ function Navbar() {
               <li>
                 <button className="navbar-btn" onClick={handleClick}>Products</button>
               </li>
+              <li>
+                <button className="navbar-btn" onClick={handleClick3}>Cart</button></li>
             </ul>
           </div>
         </div>
